@@ -2,13 +2,14 @@
 
 .jumbotron {
     text-align: center;
-    height: 300px;
+    height: 275px;
 }
 
 .col-2{
 float: right;
 
 }
+
 
 footer {
     background-color: rgb(240, 238, 238);
