@@ -19,82 +19,88 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">Joyce Nguyen</a>
+                <a class="navbar-brand" href="index.html">{JoyceNguyen}</a>
 
             </div>
-            <ul class="nav-right">
-                <li><a href="#"><span class="inline-block"></span>Projects</a></li>
-                <li><a href="#"><span class="inline-block"></span>Photos</a></li>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Photos</a>
+                </li>
             </ul>
 
         </div>
     </nav>
     <!-- end of header -->
     <!-- main -->
-   
-    <div id="main-container" class="container">
-            <section class="main-container">
-                <h1>Contact</h1>
-    
-                <form id="contact-form ">
-                    <ul>
-                        <li>
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" placeholder="John Smith" required="required">
-                        </li>
-                        <li>
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email" placeholder="example@email.com" required="required">
-                        </li>
-                        <li>
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required="required"></textarea>
-                        </li>
-                    </ul>
-                    <input type="submit" name="submit">
-                </form>
-    
-            </section>
-      
+    <div id="container">
+
+        <!--page title-->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="center">
+                    <h2>Contact me</h2>
+                </div>
+            </div>
         </div>
 
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="your name">
 
-
-
-
-
-        <!-- FOOTER -->
-        <footer class="sticky-footer border-top border-light-gray gray h6">
-            <div class="col-4">
-                &copy; Copyright 2018 Joyce Nguyen
-            </div>
-            <div class="col-2">
-                <a href="https://www.linkedin.com/in/joyce-nguyen-b6579a169/">
-                    <img alt="linkedIn" src="./assets/images/Linkin-01-128.png" width="20" height="20">
-                </a>
-                <a href="https://www.facebook.com/j.nguyen0510">
-                    <img alt="facebook" src="./assets/images/facebook_square-128.png" width="20" height="20">
-                </a>
-                <a href="https://github.com/jnguyen0581">
-                    <img alt="github" src="./assets/images/github-128.png" width="20" height="20">
-                </a>
-                <a href="mailform.html">
-                    <img alt="gmail" src="./assets/images/mail.png" width="20" height="20">
-                </a>
-
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
 
-        </footer>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
 
 
-        <!-- sources -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-        <script src="./assets/javascript/p.js"></script>
+    </div>
+
+
+    <!-- footer-->
+    <footer class="row sticky-footer border-top border-light-gray">
+        <div class="col-10">
+            &copy; Copyright 2018 Joyce Nguyen
+        </div>
+        <div class="col-2">
+            <a href="https://www.linkedin.com/in/joyce-nguyen-b6579a169/">
+                <img alt="linkedIn" src="./assets/images/Linkin-01-128.png" width="20" height="20">
+            </a>
+            <a href="https://www.facebook.com/j.nguyen0510">
+                <img alt="facebook" src="./assets/images/facebook_square-128.png" width="20" height="20">
+            </a>
+            <a href="https://github.com/jnguyen0581">
+                <img alt="github" src="./assets/images/github-128.png" width="20" height="20">
+            </a>
+            <a href="mailform.html">
+                <img alt="gmail" src="./assets/images/mail.png" width="20" height="20">
+            </a>
+        </div>
+
+    </footer>
+
+
+    <!-- sources -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="./assets/javascript/p.js"></script>
 </body>
 
 </html>

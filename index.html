@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Joyce Nguyen: Home Page</title>
+    <title>Joyce Nguyen: Projects Page</title>
 
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -15,73 +15,86 @@
 </head>
 
 <body>
-    <!-- header -->
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">{JoyceNguyen}</a>
+   
+        <!-- header -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">{JoyceNguyen}</a>
+
+                </div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                </ul>
 
             </div>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link active" href="projects.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Photos</a>
-                </li>
-            </ul>
+        </nav>
+        <!-- end of header -->
+        <!-- main -->
+        <div id="container">
 
-        </div>
-    </nav>
-    <!-- end of header -->
-    <!-- main -->
-    <div id="container">
-
-        <!--page title-->
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <div class="center">
+            <!--page title-->
+            <div class="jumbotron">
+                <div class="container">
                     <a href="">
                         <img data-src="./assets/images/joycenguyen.jpg" alt="Joyce Nguyen" class=" border bg-white p1 border-light-gray circle square-100 lazyloaded"
                             src="./assets/images/joycenguyen.jpg" style="width:150px;height:150px;">
                     </a>
-                    <h3 class="display-4">Joyce Nguyen</h3>
+                    <h2>Joyce Nguyen</h2>
+
                 </div>
+            </div>
+
+            <!-- Info about me -->
+            <div class="row">
+                <div class="col-sm-1"></div>
+
+                <div class="col-sm-4">
+                    <h4>About me</h4>
+                    <p>Joyce Nguyen is known by her friends, colleagues, and clients .</p>
+                </div>
+
+                <div class="col-sm-2"></div>
+
+                <div class="col-sm-3">
+                    <h4>My Skills</h4>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                    <li>Nodes</li>
+                </div>
+
+                <div class="col-sm-1">
+                    <h4>Contact</h4>
+                    <li><a href="https://www.linkedin.com/in/joyce-nguyen-b6579a169/">
+                            <img alt="linkedIn" src="./assets/images/Linkin-01-128.png" width="20" height="20">
+                    </li></a>
+                    <li><a href="https://www.facebook.com/j.nguyen0510">
+                            <img alt="facebook" src="./assets/images/facebook_square-128.png" width="20" height="20">
+                    </li></a>
+                    <li><a href="https://github.com/jnguyen0581">
+                            <img alt="github" src="./assets/images/github-128.png" width="20" height="20">
+                    </li></a>
+                    <li><a href="mailform.html">
+                            <img alt="gmail" src="./assets/images/mail.png" width="20" height="20">
+                    </li></a>
+                </div>
+
+                <div class="col-sm-1"></div>
+
             </div>
         </div>
 
+  
 
-        <main class="container block p3">
-            <div class="col sm-col-9">
-                <h3 class="aboutme">About me</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nostrum impedit illum aspernatur
-                    mollitia distinctio, itaque explicabo fugit eius vitae provident magnam repellat, ipsum optio
-                    officia inventore vero quo in.</p>
-            </div>
-            <div class="col sm-col-3">
-                <h3 class="aboutme">Contact</h3>
-                <a href="https://www.linkedin.com/in/joyce-nguyen-b6579a169/">
-                    <img alt="linkedIn" src="./assets/images/Linkin-01-128.png" width="20" height="20">
-                </a>
-                <a href="https://www.facebook.com/j.nguyen0510">
-                    <img alt="facebook" src="./assets/images/facebook_square-128.png" width="20" height="20">
-                </a>
-                <a href="https://github.com/jnguyen0581">
-                    <img alt="github" src="./assets/images/github-128.png" width="20" height="20">
-                </a>
-                <a href="mailform.html">
-                    <img alt="gmail" src="./assets/images/mail.png" width="20" height="20">
-                </a>
-
-            </div>
-        </main>
-
-
-    </div>
-
-    <!-- FOOTER -->
-    <footer class="sticky-footer border-top border-light-gray gray h6">
-        <div class="col-4">
+    <!-- footer-->
+    <footer class="row sticky-footer border-top border-light-gray">
+        <div class="col-10">
             &copy; Copyright 2018 Joyce Nguyen
         </div>
         <div class="col-2">
@@ -97,14 +110,13 @@
             <a href="mailform.html">
                 <img alt="gmail" src="./assets/images/mail.png" width="20" height="20">
             </a>
-
         </div>
 
     </footer>
 
 
     <!-- sources -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-4.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>

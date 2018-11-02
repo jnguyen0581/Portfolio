@@ -1,17 +1,27 @@
 
+#container{
+    padding-bottom: 125px;
+}
 
+.row {
+    position: center;
+}
 .jumbotron {
+    padding-left: 30%;
     text-align: center;
-    height: 275px;
+    height: 250px;
+}
+
+footer {
+    background-color: lightgrey;
+    
+
 }
 
 .col-2{
-float: right;
-
+    float: right;
 }
 
-
-footer {
-    background-color: rgb(240, 238, 238);
-
+.display-4{
+    height: 250px;
 }
