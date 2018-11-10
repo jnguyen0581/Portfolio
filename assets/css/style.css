@@ -1,6 +1,7 @@
 
 #container{
     padding-bottom: 125px;
+
 }
 
 .row {
@@ -22,6 +23,6 @@ footer {
     float: right;
 }
 
-.display-4{
+/* .display-4{
     height: 250px;
-}
+} */
