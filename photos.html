@@ -13,34 +13,44 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Montserrat:400,700">
 
-    <style>
-            body, html {
-              height: 100%;
-              margin: 0;
-            }
-            
-            * {
-              box-sizing: border-box;
-            }
-            
-            .bg-image {
-              /* The image used */
-              background-image: url("assets/images/codes.jpg");
-              
-              /* Add the blur effect */
-              filter: blur(8px);
-              -webkit-filter: blur(8px);
-              
-              /* Full height */
-              height: 100%; 
-              
-              /* Center and scale the image nicely */
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
-            }
-            
-    </style>
+    <script type="text/javascript">
+        var image1 = new Image()
+        image1.src = "assets/images/1.jpg"
+        var image2 = new Image()
+        image2.src = "assets/images/2.jpg"
+        var image3 = new Image()
+        image3.src = "assets/images/3.jpg"
+        var image4 = new Image()
+        image4.src = "assets/images/4.jpg"
+        var image5 = new Image()
+        image5.src = "assets/images/5.jpg"
+        var image6 = new Image()
+        image6.src = "assets/images/6.jpg"
+        var image7 = new Image()
+        image7.src = "assets/images/7.jpg"
+        var image8 = new Image()
+        image8.src = "assets/images/8.jpg"
+        var image9 = new Image()
+        image9.src = "assets/images/9.JPG"
+        var image10 = new Image()
+        image10.src = "assets/images/10.jpg"
+        var image11 = new Image()
+        image11.src = "assets/images/11.jpg"
+        var image12 = new Image()
+        image12.src = "assets/images/12.jpg"
+        var image13 = new Image()
+        image13.src = "assets/images/13.jpg"
+        var image14 = new Image()
+        image14.src = "assets/images/14.jpg"
+        var image15 = new Image()
+        image15.src = "assets/images/15.jpg"
+        var image16 = new Image()
+        image16.src = "assets/images/16.jpg"
+        var image17 = new Image()
+        image17.src = "assets/images/17.jpg"
+
+
+    </script>
 </head>
 
 <body>
@@ -54,40 +64,44 @@
             </div>
             <ul class="nav justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link active" href="projects.html">Projects</a>
+                <a class="nav-link" href="index.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="photos.html">Photos</a>
+                    <a class="nav-link active" href="projects.html">Projects</a>
                 </li>
             </ul>
 
         </div>
     </nav>
-
     <!-- end of header -->
     <!-- main -->
     <div id="container">
 
-        <!--page title-->
-        <div class="jumbotron">
-                    <img src="./assets/images/joycenguyen.jpg" alt="Joyce Nguyen" class="avatar"
-                        style="width:150px;height:150px;"> 
-        </div>
+            <!--page title-->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <div class="center">
+                        <h2>Pictures</h2>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Info about me -->
-        <div class="bg-image"></div>
-
-        <div class="row">
             <div class="col-sm-5">
-                <h5>About me</h5>
-                <p>Joyce Nguyen is currently attending at Northwestern  to become a Full Stack Web Developer.  </p>
-                <p>Things she loves to do:</p>
-                <ul>
-                    <li>hang out with her nieces and newphews</li>
-                    <li>try different type of cuisines.</li>
-                    <li></li>
-                </ul>
-
+                <section class="probootstrap-section-half probootstrap-no-hover">
+                    <img src="assets/images/1.jpg" name="slide" width="450" height="450">
+                    <script type="text/javascript">
+                        var step = 1
+                        function slideit() {
+                            document.images.slide.src = eval("image" + step + ".src")
+                            if (step < 41)
+                                step++
+                            else
+                                step = 1
+                            setTimeout("slideit()", 1500)
+                        }
+                        slideit()
+                    </script>
+                </section>
             </div>
 
         </div>

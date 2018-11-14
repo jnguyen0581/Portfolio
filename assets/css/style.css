@@ -1,28 +1,52 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
 
-#container{
-    padding-bottom: 125px;
+body {
+	background: #f5f5f5;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 100px;
+}
 
+.jumbotron {
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	font-family: 'Saira', sans-serif;
+	font-weight: bold;
+	opacity: .9;
+	padding-left: 30%;
+	text-align: center;
+}
+
+
+.avatar {
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+#container {
+	padding-bottom: 125px;
 }
 
 .row {
-    position: center;
+	position: center;
 }
 .jumbotron {
-    padding-left: 30%;
-    text-align: center;
-    height: 250px;
+	padding-left: 30%;
+	text-align: center;
+	height: 250px;
 }
 
 footer {
-    background-color: lightgrey;
-    
-
+	background-color: lightgrey;
 }
 
-.col-2{
-    float: right;
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(179, 232, 250);
+    }
 }
-
-/* .display-4{
-    height: 250px;
-} */
