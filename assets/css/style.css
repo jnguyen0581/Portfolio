@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	/* background: #f5f5f5;  */
+	background: #f5f5f5; 
 	font-family: 'Montserrat', sans-serif;
 	margin-bottom: 100px;
 }
@@ -32,11 +32,6 @@ body {
 	padding-bottom: 125px;
 }
 
-/* .row {
-	position: center;
-	color: lightgray;
-} */
-
 .jumbotron {
 	padding-left: 30%;
 	text-align: center;
@@ -49,6 +44,6 @@ footer {
 
 @media only screen and (max-width: 600px) {
     body {
-        background-color: rgb(179, 232, 250);
+        background-color: skyblue;
     }
 }
